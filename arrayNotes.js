@@ -48,9 +48,9 @@ let values = [1, 2, 3, 4];
 // console.log(students[students.length-1]); // gives last item
 
 //slice up a piece of the original array
-let fruits = ['apple', 'banana', 'orange', 'lemon', 'grape'];
-let citrus = fruits.slice(2, 4);
-console.log(citrus);
+// let fruits = ['apple', 'banana', 'orange', 'lemon', 'grape'];
+// let citrus = fruits.slice(2, 4);
+// console.log(citrus);
 
 //first number is the starting index, which we include
 //second number is the index we stop BEFORE. Does not include.
@@ -60,11 +60,11 @@ console.log(citrus);
 //unknowingly if you change another that
 //was equal to it
 
-let nums = [5, 4, 3, 2, 1]
-let newNums = nums
-newNums[0] = 12
-console.log('nums: ' + nums)
-console.log('newNums: ' + newNums)
+// let nums = [5, 4, 3, 2, 1]
+// let newNums = nums
+// newNums[0] = 12
+// console.log('nums: ' + nums)
+// console.log('newNums: ' + newNums)
 
 //notice both changed?
 //this is because newNums is NOT a new
@@ -90,37 +90,37 @@ console.log('newVals: ' + newVals)
 //does not allow you to manipulate each item as you
 //add it to the new list, but is faster
 
-let ages = [5, 4, 3, 2, 1]
-let newAges = [...ages]
-newAges[0] = 12
-console.log('ages: ' + ages)
-console.log('newAges: ' + newAges)
-
-//to write a function to do the above
-
-let values = [5, 4, 3, 2, 1]
-compareArrays(values)
-function compareArrays(arr){
-    let newVals = []
-    for (let i=0; i<arr.length; i++){
-        newVals.push(arr[i]);
-    }
-    newVals[0]=12
-    console.log('vals: ' + vals)
-    console.log('newVals: ' + newVals)
-}
-
-//Updating a top 3 list
-
-let highScores = [107, 99, 98]
-let newScore = 101
-let newHighScores = []
-for (let i=0; i<highScores.length; i++){
-    if (highScores[i]>= newScore){
-        newHighScores.push(highScores[i])
-    } else{
-        newHighScores.push(newScore)
-        newScore=0
-    }
-}
-console.log(newHighScores)
+// let ages = [5, 4, 3, 2, 1]
+// let newAges = [...ages]
+// newAges[0] = 12
+// console.log('ages: ' + ages)
+// console.log('newAges: ' + newAges)
+//
+// //to write a function to do the above
+//
+// let values = [5, 4, 3, 2, 1]
+// compareArrays(values)
+// function compareArrays(arr){
+//     let newVals = []
+//     for (let i=0; i<arr.length; i++){
+//         newVals.push(arr[i]);
+//     }
+//     newVals[0]=12
+//     console.log('vals: ' + vals)
+//     console.log('newVals: ' + newVals)
+// }
+//
+// //Updating a top 3 list
+//
+// let highScores = [107, 99, 98]
+// let newScore = 101
+// let newHighScores = []
+// for (let i=0; i<highScores.length; i++){
+//     if (highScores[i]>= newScore){
+//         newHighScores.push(highScores[i])
+//     } else{
+//         newHighScores.push(newScore)
+//         newScore=0
+//     }
+// }
+// console.log(newHighScores)
